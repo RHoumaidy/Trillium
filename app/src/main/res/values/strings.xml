@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trillium Vehicle Log System</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="user_name_title">User Name</string>
+    <string name="password_title">Password</string>
+    <string name="user_type_orgin">Origin Site</string>
+    <string name="user_type_truck">Truck</string>
+    <string name="user_type_destination">Destination site</string>
+    <string name="longin_btn">Login</string>
+    <string name="register_edit_text">Register here</string>
+    <string name="sync_action_title">Sync</string>
+
+    <string-array name="test">
+        <item>DRIVER1</item>
+        <item>DRIVER2</item>
+        <item>DRIVER3</item>
+        <item>DRIVER4</item>
+    </string-array>
+
+    <string name="title_activity_orgin_site">Origine Site Log</string>
+    <string name="title_activity_destination_site_acitvity">Destination Site Log</string>
+
+</resources>

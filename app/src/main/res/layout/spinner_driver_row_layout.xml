@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/DriverProfileIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <CheckedTextView
+        android:id="@+id/DriverNameTv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:checkMark="?android:attr/textCheckMark"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+
+</LinearLayout>

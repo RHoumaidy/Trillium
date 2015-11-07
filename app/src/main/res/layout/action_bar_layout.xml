@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!--<TextView-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:id="@+id/textView11"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Trillium Vehicle Log System"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#fff"-->
+        <!--android:layout_marginRight="20dp"/>-->
+
+    <TextView
+        android:id="@+id/actionBarDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22/2/2222"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"/>
+
+</RelativeLayout>

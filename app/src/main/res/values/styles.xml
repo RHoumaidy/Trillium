@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1565C0</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowBackground">@drawable/header_background</item>
+
+    </style>
+</resources>

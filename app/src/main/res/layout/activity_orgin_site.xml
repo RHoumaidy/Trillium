@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.raafat.activities.OrginSiteActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/selectSiteSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/workShiftTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WorkShift"
+            android:layout_alignParentRight="true"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/workShiftTv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/workShiftTV"
+            android:text="Work Shift : "
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:text="In Site Vehicles List"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/orginSiteInLV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff272727" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/header_background"
+                android:gravity="center"
+                android:text="Out Site Vehicles List"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/orginSiteOutLV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff272727" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/driverProfileIV"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/vehicleNameTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/driverProfileIV"
+        android:text="Vehicle!"
+        android:textColor="@color/primaryColor"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/driverNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vehicleNameTV"
+        android:layout_below="@id/vehicleNameTV"
+        android:layout_gravity="center_vertical"
+        android:text="dirver" />
+
+    <LinearLayout
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/driverNameTv"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/leavBtn"
+        android:layout_toRightOf="@id/driverProfileIV"
+        android:layout_alignLeft="@id/vehicleNameTV"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/loadedWieghtLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loaded Weight "
+                android:textSize="10sp"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/loadedWieghtET"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="Loaded Weight"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/emptyWieghtLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empty Weight "
+                android:singleLine="true"
+                android:textSize="10sp"/>
+            <EditText
+                android:id="@+id/emptyWieghtET"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:gravity="center_horizontal"
+                android:hint="Empty Wieght"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@id/leavBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="#dd1122"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:text="Check Out"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
