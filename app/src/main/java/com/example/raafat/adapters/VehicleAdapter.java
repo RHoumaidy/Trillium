@@ -61,7 +61,7 @@ public class VehicleAdapter extends ArrayAdapter<Truck> {
         truckName.setText(truck.getTruckName());
         Picasso.with(ctx)
                 .load(new File(driverForThisTruck.getImgUrl()))
-                .error(R.drawable.no_sign)
+                //.error(R.drawable.no_sign)
                 .into(driverProile);
 
 

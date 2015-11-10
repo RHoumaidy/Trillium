@@ -235,8 +235,8 @@ public class DestinationRecord {
                                 c.getString(c.getColumnIndex(COL_DATE_IN)),
                                 c.getString(c.getColumnIndex(COL_DATE_OUT)),
                                 c.getLong(c.getColumnIndex(COL_RECORDED_USER_ID)),
-                                c.getFloat(c.getColumnIndex(COl_EMPTY_WIEGHT)),
-                                c.getFloat(c.getColumnIndex(COL_LOADED_WIEGHT))
+                                c.getFloat(c.getColumnIndex(COL_LOADED_WIEGHT)),
+                                c.getFloat(c.getColumnIndex(COl_EMPTY_WIEGHT))
                         )
                 );
             }while (c.moveToNext());

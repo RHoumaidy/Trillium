@@ -345,11 +345,15 @@ public class OrgineSiteAdapter extends ArrayAdapter<Truck> {
 
 
         Driver driver = TruckDrivers.getDriversForTruck(truck.getTruckId(), MyApplication.db);
-        if (driver == null)
+
+        int errSign = R.mipmap.ic_profile;
+        if (driver == null) {
             driver = new Driver(-1, "Unknown", "http");
+            //errSign = R.drawable.no_sign;
+        }
         Picasso.with(ctx)
                 .load(new File(driver.getImgUrl()))
-                .error(R.drawable.no_sign)
+                .error(errSign)
                 .into(profileImage);
 
         truckName.setText(truck.getTruckName());

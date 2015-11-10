@@ -87,7 +87,7 @@ public class DriversAdapter extends ArrayAdapter<Driver> {
         try {
             Picasso.with(ctx)
                     .load(new File(driver.getImgUrl()))
-                    .error(R.drawable.no_sign)
+                    //.error(R.drawable.no_sign)
                     .into(driverProfile);
         }catch (Exception e){
 
